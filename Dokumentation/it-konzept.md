@@ -1,12 +1,9 @@
-#IT-Konzept#
+# IT-Konzept
 Projektname: Weichware – PDF2Hörbuch  
 Version: 0  
-Autor: Friese, Weichware 
+Autor: Friese,Föll,Wilmer,Gass,Demny 
 
-####Dokumenthistorie#### 
-
-  
-
+## Dokumenthistorie
 Aufgabe                         Termin      Autor   Status    Version  
 IT-Konzept erstellen            18.10.2022  Friese  Erledigt  0 
 Bedienoberfläche erstellen                          Offen 
@@ -17,407 +14,198 @@ PHP-Programm Userausgabe                            Offen
 PHP-Programm Nutzeraccount                          Offen 
 Abnahme für Projektstart                            Offen 
 Übersetzung in weitere Sprachen                     Offen 
+Android-APP Oberfläche erstellen                    Offen
+Android-APP API-TTS aufrufen                        Offen
+Android-App                                         Offen
+PDF2Text                                            Offen
+Abnahme für Projektstart       18.01.2023           Offen
 
-##Gesamtüberblick##
+
+
+## Gesamtüberblick
 Ziel des Projektes ist es für Studenten eine benutzerfreundliche Anwendung zu schaffen, welche es ermöglicht Skripte, Artikel und weitere Textdokumente in PDF-Form in Audioformat umzuformen und auf mobilen Geräten zur Verfügung zu stellen. Das Projekt entstand auf der Idee der immer populärer werdenden Hörbücher, es ermöglicht beispielsweise Studenten Lernskripte auditiv wahrzunehmen und Lernen besser in den Alltag zu integrieren.  
 
-##Basis##
+## Basis
 Dieses Projekt wird im Rahmen einer Seminaraufgabe im Modul Softwaretechnik-Projekt im Wintersemester 2022/2023 erstellt und bearbeitet. 
 
-##Allgemeine Informationen:## 
+## Allgemeine Informationen:
 Bereitstellung von PDF 
 Extrahierung von Text 
 Umwandlung Text zu Audioformat mit Text to Speech (TTS) 
 Ausgabe von Audio auf Endgeräten 
 
-##Anforderungen:## 
+## Anforderungen:
 
  
 
-##Allgemeine Bedingungen:## 
+## Allgemeine Bedingungen:
 PHP 
 HTML 
 Javascript 
+Android
 
 
-##Architektur##  
+## Architektur:
+Durch die Anforderung der Skalierbarkeit soll die Erweiterung auf weitere I/O Formate möglichst einfach sein. Die Oberfläche soll über den Browser angesteuert werden können für den Input, wie auch die Ausgabe.   
 
-  
-
-##Besondere Bemerkungen zur Architektur:## 
-
- 
-
+### Besondere Bemerkungen zur Architektur: 
+API Google TTS 
+pyPDF2 
 Schnittstellen als Webservice 
-
 API TTS 
 
-  
-
-Anwendungsdiagramm  
-
-  
-
+### Anwendungsdiagramm  
 Grafische Gesamtdarstellung aller beteiligten Systeme  
-
 PHP-Server , API , Browser 
-
 welche Schnittstellen und Daten  
-
- 
-
 Stichpunkte für den Diagramminhalt:  
 
-Daten  
+## Voraussetzungen  
 
-Anwendungen  
-
-<Schnittstellen>  
-
-<Fremdsysteme>  
-
-Seitenumbruch
- 
-
-Voraussetzungen  
-
-  
-
-Programmierkenntnisse in PHP, 
-
+Programmierkenntnisse in PHP
+Programmierkenntnisse in Android/Java
 Text-to-speech-Umwandlung  
 
-  
-
-Software  
-
-  
-
+### Software  
 Welche Software muss auf welchen Systemen vorhanden sein.  
-
-  
-
 Benutzer: Webbrowser 
-
 System: Server mit Datenablage + PHP Support 
-
 Extern: TTS-API 
 
   
 
-<Hardware>  
-
-  
-
+### Hardware  
 Webserver  
+Unterstützt PHP
 
-Unterstützt PHP 
-
-  
-
-<Daten>  
-
-  
-
+### Daten 
 Text im gängigen Format 
-
 Audio Output 
-
 Evtl. Benutzerkonto 
 
-  
-
-Zielsetzungen  
-
-  
-
+## Zielsetzungen  
 Das Ziel dieser Software ist die Bereitstellung von eine Audioausgabe von Testdokumenten mit einem Schwerpunkt auf Usability und Wartbarkeit.  
 
-  
-
-<Software>  
-
-  
-
+### Software  
 Das Webinterface soll auf den aktuellen Versionen von Firefox Klar, Microsoft Edge und Chrome Mobil lauffähig sein.  
-
 Die Datenschnittstellen sollen, wenn möglich CSV verwenden.  
-
 Die Anwendungen müssen auf Windows10 sowie Android laufen.  
 
-  
-
-<Performanz>  
-
-  
-
+### Performanz
 Die Webanwendung darf eine maximale Zugriffszeit von 30 Sekunden bei 10 parallelen Nutzern nicht überschreiten.  
 
- 
-
-<Verfügbarkeit>  
-
-  
-
+### Verfügbarkeit  
 Die Anwendung wird mehrmals im Semester benötigt. Es sollte eine allgemeine Verfügbarkeit von 98% anvisiert werden. Hochverfügbarkeitslösungen werden nicht eingeplant, bei hoher Anzahl an Usern ist die Verwendung von Loadbalancer möglich.  
 
-  
-
-Seitenumbruch
- 
-
- 
-
-Ansprechpartner  
-
-  
-
+##Ansprechpartner  
 <fachlich>  
-
-  
-
 Team Weichware 
 
-  
-
 <technisch>  
-
-  
-
 Team Weichware  
 
- 
-
-Daten  
-
-  
-
+## Daten  
 Die Textdokumente werden durch den User bereitgestellt bzw. Hochgeladen. Diese Daten werden anschließend von der Software über eine Schnittstelle eingelesen und in Text-to-Speech umgewandelt. Die daraus entstehenden Audiodaten werden dann über den vom User verwendeten Browser geladen und abgespielt. 
 
-  
+## Überblick  
 
-Überblick  
-
-  
-
-Die Textdateien sollen in gängigen Formaten verwendet werden, unter die gängige fallen pdf, docs, odt und txt. Dies dient dazu, dass die Besonderheiten der einzelnen Formate beachtet werden kann, ohne dass jegliche Nischenformate verarbeitet werden können, da dies nicht in einem akzeptablen Kosten-Nutzen-Faktor steht.  
+  Die Textdateien sollen in gängigen Formaten verwendet werden, unter die gängige fallen pdf, docs, odt und txt. Dies dient dazu, dass die Besonderheiten der einzelnen Formate beachtet werden kann, ohne dass jegliche Nischenformate verarbeitet werden können, da dies nicht in einem akzeptablen Kosten-Nutzen-Faktor steht.  
 
 Eine stabile Verbindung ist wichtig, damit die Audiowiedergabe möglichst ohne Unterbrechung und Verzögerung funktioniert. Alternativ kann man über eine Downloadmöglichkeit nachdenken, ob diese die Probleme nicht verringern könnten. Die angebotenen Datentypen sollten auch in einem gängigen Format angeboten werden.  
 
   
 
-Architektur  
+## Architektur  
 
-  
 
-  
-
-Datenflussdiagramm  
-
-  
-
+### Datenflussdiagramm  
 Wird nachgereicht 
 
-  
+### Datenentitäten  
+#### Was  
+Testdokument 
+Audiodatei 
 
-Datenentitäten  
+#### Woher  
+Usereingabe 
+Bereitstellung Browser 
+Download   
 
-   
+#### Wohin  
+Text-to-Speech 
+Server 
 
-Was  
+#### Wann  
+Bei Bedarf 
+Full-Backup der Daten jeden Sonntag 17 Uhr 
+Diffenzielles Backup der Daten jeden Tag um 20 Uhr 
 
- 	Testdokument 
-
-         Audiodatei 
-
-Woher  
-
- 	Usereingabe 
-
-            Bereitstellung Browser 
-
-             Download   
-
-Wohin  
-
- 	Text-to-Speech 
-
-           Server 
-
-Wann  
-
- 	Bei Bedarf 
-
-                   Full-Backup der Daten jeden Sonntag 17 Uhr 
-
-                   Diffenzielles Backup der Daten jeden Tag um 20 Uhr 
-
-  
-
-<Datenintegrität>  
-
-  
-
+### <Datenintegrität>  
 Es dürfen nur Textdokumente im gängigen Format verwendet werden, dies könnte bei der Abgabe über eine Abfrage gelöst werden. Ebenso muss sichergegangen werden, dann der User das gewünschte Format erhält, mit dem dieser arbeiten kann.    
-
-   
-
-<Datenmodelle>  
-
-  
-
+### <Datenmodelle>  
 Hier sollten z.B. die Datenmodellierungen zu verwendeten Datenbanken per Skript, Diagramm und oder Referenz auf externe Dateien hinterlegt werden.  
-
 Aber auch ein paar Exceltabellen oder z.B. XML-Dateien sind es gelegentlich wert hier ordentlich modelliert zu werden.  
-
-  
-
-Steuerung  
-
-  
-
+###Steuerung  
 Hier soll beschrieben werden, wie, von wem und wann genau eine Anwendung aufgerufen werden soll. Eine einfache Rechteverwaltung kann hier mit beschrieben werden. Für eine komplexere Rechteverwaltung ist eher ein eigenes Kapitel empfehlenswert.  
 
-  
+##Anwender  
+##### User 
+upload+ download+abspielen 
 
-Anwender  
+#### Administratoren 
+Zugriff auf alles 
 
-        User 
+#### Servicesaccount 
+Zugriff auf Service +Filesystem 
 
-        upload+ download+abspielen 
+#### Anwendungen		 
+Text-to-Speech  
+Zugriff auf Filesystem  
 
- 
+#### Output 
+Zugriff auf Filesystem 
 
-       Administratoren 
+#### Services 
+Backupmanager 
+Zugriff auf Filesystem 
+API Text2Speech
 
-       Zugriff auf alles 
+#### Initiator 
+Zugriff auf Filesystem + spricht Text-to-Speech an 
 
- 
-
-      Servicesaccount 
-
-      Zugriff auf Service +Filesystem 
-
-Anwendungen		 
-
-     Text-to-Speech  
-
- 	    Zugriff auf Filesystem  
-
- 
-
-Output 
-
-     Zugriff auf Filesystem 
-
- 
-
- Services 
-
- 	     Backupmanager 
-
- 	     Zugriff auf Filesystem 
-
- 
-
-       Initiator 
-
-      Zugriff auf Filesystem + spricht Text-to-Speech an 
+## Verarbeitung  
 
   
 
-Verarbeitung  
+## Anforderungen: gängige Formate, Wartbarkeit, skalierbar, Audiooption, Filesystem, Backups 
 
-  
-
-Anforderungen: gängige Formate, Wartbarkeit, skalierbar, Audiooption, Filesystem, Backups 
-
-  
-
-Überblick  
-
-  
-
+## Überblick  
 Text-to-Speech nur mit gängigen Formaten im I/O. Schnittstelle zwischen Filesystem und Input, sowie Filesystem und Output 
 
-  
-
-  
-
-Architektur  
-
-  
-
-Durch die Anforderung der Skalierbarkeit soll die Erweiterung auf weitere I/O Formate möglichst einfach sein. Die Oberfläche soll über den Browser angesteuert werden können für den Input, wie auch die Ausgabe. 
-
-  
-
-< Zugriffsdiagramm>  
-
-  
-
+## Zugriffsdiagramm 
 Wird nachgereicht 
 
-  
-
-Klassenmodell  
-
-  
-
+## Klassenmodell  
 Wird nachgereicht 
 
-  
-
-Verarbeitungsentitäten  
-
-  
-
+## Verarbeitungsentitäten  
 Wird nachgereicht 
 
-  
-
-<Datenplausibilität>  
-
-  
-
+## Datenplausibilität
 Es müssen Daten der Datenformaten pdf, docx, odt und txt für den Dateninput gegeben werden. Output ebenfalls in gängigen Format (mp3). Keine weitere Überprüfung nötig. 
 
-  
-
-Protokollierung  
-
-  
-
+## Protokollierung  
 Die Protokollierung der technischen und fachlichen Protokolle wird von Jan Friese übernommen. Die Protokolle des Projektmanagements werden von Patrik Gass übernommen. Tägliches Logging durch die Services. 
 
-  
-
-Qualitätssicherung  
-
-  
-
+## Qualitätssicherung  
 Modularer Aufbau des Programms, Überprüfung der Formate, Zugriffsrechte, eventuell Zertifikate für Sicherheit 
 
-  
-
-<Programmierrichtlinien>  
-
- 
-
+## Programmierrichtlinien
 Modular, Verwendung git, Kommentierung des Quelltextes 
 
-  
-
-Test  
-
-  
-
+## Test  
 Cognitive Workthrough 
-
 Clicktest 
-
 HTML-Test 
-
 Benutzertest 
-
 100 Testfälle mit verschiedenen Texten und Skripten 
