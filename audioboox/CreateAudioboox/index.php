@@ -3,7 +3,7 @@
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style> 
+    <style>
       /* Stylesheet für Drag Drop*/
       .upload-container {
         position: relative;
@@ -41,19 +41,6 @@
       <input type="file" id="file_upload" multiple accept=".pdf"/>
     </div>
       <!-- Text Input falls notwendig-->
-  <form>
-    <input type="text" id="textid" name="text"><br>
-    <input type="submit" onclick="changetext()">
-  </form>
-
-  <!--Auswahl Stimme -->
-  <select id="voiceSelect"></select>
-
-  <!--Navigations Buttons -->
-  <button onclick="stopaudio()" type="button" id="stop">stop</button>
-  <button onclick="pauseaudio()" type="button" id="pause">pause</button>
-  <button onclick="playaudio()" type="button" id="play">play</button>
-
 
 <script>
   //File Chooser/Drag Drop Funktion
@@ -70,60 +57,12 @@
         alert("Selected file(s) :\n____________________\n"+reader.readAsDataURL(filenames));
       }
 
-  //Auswahl Stimmen Funktion (noch nicht funktionsfähig)
-  function populateVoiceList() {
-  if (typeof speechSynthesis === 'undefined') {
-    return;
-  }
 
-  const voices = speechSynthesis.getVoices();
-
-  for (let i = 0; i < voices.length; i++) {
-    const option = document.createElement('option');
-    option.textContent = `${voices[i].name} (${voices[i].lang})`;
-
-    if (voices[i].default) {
-      option.textContent += ' — DEFAULT';
-    }
-
-    option.setAttribute('data-lang', voices[i].lang);
-    option.setAttribute('data-name', voices[i].name);
-    document.getElementById("voiceSelect").appendChild(option);
-  }
 }
 
-populateVoiceList();
-if (typeof speechSynthesis !== 'undefined' && speechSynthesis.onvoiceschanged !== undefined) {
-  speechSynthesis.onvoiceschanged = populateVoiceList;
-}
 
-  //TTS Funktion
-  var synth = window.speechSynthesis; //speechSynthesis?
-  function changetext(){
-  var temp = document.getElementById('textid').value;
-  alert(temp);
-  }
-  var msg = new SpeechSynthesisUtterance('Hallo das ist ein Test'); //Hier Input der gesagt wird ###############
-	msg.rate = 0.8; // 0.1 to 10
-	msg.pitch = 1; //0 to 2
 
-  //Navigationsbutton Funktion
-  function stopaudio(){
-  synth.cancel()
-  }
 
-  function pauseaudio(){
-  synth.pause()
-  }
-
-  function playaudio(){
-  if(synth.pending === false){
-    synth.speak(msg);
-  }
-  else{
-    synth.resume()
-  }
-  }
 
 
 

@@ -36,7 +36,7 @@ h3 {
       text-align: left;
       font-size:30px;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }      
+      }
 
 p{
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -60,7 +60,7 @@ p{
 
 
 <!-- Button um neues Audioboox zu erstellen, Weiterleitung zu CreateAudioboox/index.php-->
-<input class="buttons"  type="button" onclick="window.location.href='http://localhost/audioboox/CreateAudioboox/index.php';" 
+<input class="buttons"  type="button" onclick="window.location.href='http://localhost/audioboox/CreateAudioboox/index.php';"
 value="Neues Audioboox erstellen"/>
 
 
@@ -96,35 +96,36 @@ value="Neues Audioboox erstellen"/>
         echo $array1[3]; echo "<br> <br>";
         echo "<b>Fällig am: </b><br>";
         echo $array1[4]; echo "<br>";
-        
+
         //Button Funktion: Verschieben von Backlog zu Doing/Bearbeitung
-        if(isset($_POST["backlogtodoing$i"])) { 
+
+        if(isset($_POST["backlogtodoing$i"])) {
           rename("../task/alltasks/backlog/task$i.json","../task/alltasks/doing/task$i.json");
-          ?><META http-equiv="refresh" content="0.5"><?php  
+
         }
         //Button Funktion: Löschen des Tasks
-        if(isset($_POST["deletebacklog$i"])) { 
+        if(isset($_POST["deletebacklog$i"])) {
           unlink("../task/alltasks/backlog/task$i.json");
-          ?><META http-equiv="refresh" content="0.5"><?php
+
         }
-        
-        
+
+
       ?>
-      	<form method="post"> 
+      	<form method="post">
           <!-- Button erzeugen: Verschieben von Backlog zu Doing/Bearbeitung -->
-          <input class="buttons" type="submit" name="backlogtodoing<?php echo htmlspecialchars($i)?>" 
+          <input class="buttons" type="submit" name="backlogtodoing<?php echo htmlspecialchars($i)?>"
           value='Verschieben zu "Bearbeitung" ->'/>
           <!-- Button erzeugen: Löschen des Tasks -->
-          <input class="buttons" type="submit" name="deletebacklog<?php echo htmlspecialchars($i)?>" 
+          <input class="buttons" type="submit" name="deletebacklog<?php echo htmlspecialchars($i)?>"
             value='Task löschen'/>
       </form>
-      
-        
-    </div> 
-    <?php 
+
+
+    </div>
+    <?php
     };
     ?>
-    
+
   </div>
 
   <div class="column">
@@ -154,27 +155,27 @@ value="Neues Audioboox erstellen"/>
         echo $array2[3]; echo "<br> <br>";
         echo "<b>Fällig am: </b><br>";
         echo $array2[4]; echo "<br>";
-      if(isset($_POST["doingtobacklog$i"])) { 
+      if(isset($_POST["doingtobacklog$i"])) {
         rename("../task/alltasks/doing/task$i.json","../task/alltasks/backlog/task$i.json");
-        ?><META http-equiv="refresh" content="0.5"><?php 
+
       }
-      if(isset($_POST["doingtodone$i"])) { 
+      if(isset($_POST["doingtodone$i"])) {
         rename("../task/alltasks/doing/task$i.json","../task/alltasks/done/task$i.json");
-        ?><META http-equiv="refresh" content="0.5"><?php  
+
       }
-      if(isset($_POST["deletedoing$i"])) { 
+      if(isset($_POST["deletedoing$i"])) {
         unlink("../task/alltasks/doing/task$i.json");
-        ?><META http-equiv="refresh" content="0.5"><?php
+
       }
       ?>
-      <form method="post"> 
-        <input class="buttons" type="submit" name="doingtobacklog<?php echo htmlspecialchars($i)?>" 
+      <form method="post">
+        <input class="buttons" type="submit" name="doingtobacklog<?php echo htmlspecialchars($i)?>"
         value='<- Verschieben zu "Backlog"'/>
-        <input class="buttons" type="submit" name="doingtodone<?php echo htmlspecialchars($i)?>" 
+        <input class="buttons" type="submit" name="doingtodone<?php echo htmlspecialchars($i)?>"
         value='Verschieben zu "Abgeschlossen" ->'/>
-        <input class="buttons" type="submit" name="deletedoing<?php echo htmlspecialchars($i)?>" 
+        <input class="buttons" type="submit" name="deletedoing<?php echo htmlspecialchars($i)?>"
             value='Task löschen'/>
-      </form> 
+      </form>
     </div> <?php
     };
 
@@ -209,31 +210,31 @@ value="Neues Audioboox erstellen"/>
         echo $array3[3]; echo "<br> <br>";
         echo "<b>Fällig am: </b><br>";
         echo $array3[4]; echo "<br>";
-        if(isset($_POST["donetodoing$i"])) { 
+        if(isset($_POST["donetodoing$i"])) {
           rename("../task/alltasks/done/task$i.json","../task/alltasks/doing/task$i.json");
-          ?><META http-equiv="refresh" content="0.5"><?php
+
         }
-        if(isset($_POST["deletedone$i"])) { 
+        if(isset($_POST["deletedone$i"])) {
           unlink("../task/alltasks/done/task$i.json");
-          ?><META http-equiv="refresh" content="0.5"><?php
+
         }
 
 
         ?>
-        <form method="post"> 
-            <input class="buttons" type="submit" name="donetodoing<?php echo htmlspecialchars($i)?>" 
+        <form method="post">
+            <input class="buttons" type="submit" name="donetodoing<?php echo htmlspecialchars($i)?>"
             value='<- Verschieben zu "Bearbeitung"'/>
-            <input class="buttons" type="submit" name="deletedone<?php echo htmlspecialchars($i)?>" 
+            <input class="buttons" type="submit" name="deletedone<?php echo htmlspecialchars($i)?>"
             value='Task löschen'/>
         </form>
-      </div> 
+      </div>
       <?php
 
     };
 
     ?>
   </div>
-  
+
 </div>
 </body>
 
