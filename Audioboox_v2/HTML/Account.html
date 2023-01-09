@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Audioboox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <header id="navbar">
+        <img src="symbol.png" alt"logo" class"logo" width="70" height="50">
+
+        <nav >
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Text-to-Speech.html">Text-to-Speech</a></li>
+            <li><a href="Library.html">Bibliothek</a></li>
+            <li><a href="Account.html">Mein Konto</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="content">
+      <h1>Anmeldung</h1>
+        <p>Deine Anmeldedaten:</p>
+        <form action="/login" method="POST">
+          <label for="username">Deine E-Mail-Adresse</label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="password">Dein Passwort</label><br>
+          <input type="password" id="password" name="password"><br><br>
+
+<button style="width:100px; height:30px;" onclick="document.getElementById('submit').click()">Anmelden</button>
+
+          <input type="submit" value="Submit"style="display:none">
+        </form>
+        <p>Neu bei Audioboox? <a href="/register">Jetzt registrieren</a>.</p>
+</div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+          </div>
+          <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+  </body>
+</html>

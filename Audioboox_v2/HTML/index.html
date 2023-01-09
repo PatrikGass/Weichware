@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Audioboox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <header id="navbar">
+
+        <img src="symbol.png" alt"logo" class"logo" width="70" height="50">
+        <nav >
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Text-to-Speech.html">Text-to-Speech</a></li>
+            <li><a href="Library.html">Bibliothek</a></li>
+            <li><a href="Account.html">Mein Konto</a></li>
+          </ul>
+        </nav>
+
+    </header>
+    <main>
+
+<br>
+      <div class="content">
+<p>Willkommen bei Audiobox! Hier können Sie Ihre PDF-Dateien ganz einfach in natürlich klingendes Audio umwandeln. Laden Sie einfach Ihre Texte hoch und wandeln Sie sie in ein Hörbuch um.
+Sie können aus einer Vielzahl von Stimmen und Sprachen wählen, um die perfekte Lösung für Ihre Bedürfnisse zu finden. Egal, ob Sie Ihre Skripte beim Lernen anhören oder
+ein Hörbuch aus Ihrer eigenen Geschichte erstellen möchten, Audioboox macht es möglich. Probieren Sie es aus und teilen Sie uns Ihre Meinung mit!</p>
+</div>
+
+    </main>
+
+    <script src="script.js"></script>
+    </div>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<footer>
+  <div class="footer-left">
+    <p class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      ·
+      <a href="/about">About</a>
+      ·
+      <a href="/contact">Contact</a>
+    </p>
+
+    <div class="footer-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/PatrikGass/Weichware"><i class="fa fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
