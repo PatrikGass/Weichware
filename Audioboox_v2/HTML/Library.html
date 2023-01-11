@@ -8,11 +8,8 @@
   </head>
   <body>
     <div class="container">
-    <header id="navbar">
-
-        <img src="symbol.png" alt"logo" class"logo" width="70" height="50">
-
-        <nav >
+      <header id="navbar">
+        <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Text-to-Speech.html">Text-to-Speech</a></li>
@@ -20,64 +17,75 @@
             <li><a href="Account.html">Mein Konto</a></li>
           </ul>
         </nav>
-
-    </header>
-    <main>
-<div class="content">
-      <br></br>
-      <div><label for="audio-upload">Hörbuch zum abspielen auswählen:</label>
-      <br></br>
-      <button style="width:120px; height:35px;" onclick="document.getElementById('audio-upload').click()">Hörbuch auswählen</button>
-      <input id="audio-upload" type="file"style="display:none"/></div>
-    </main>
-
-    <script src="script.js"></script>
+      </header>
+      <main>
+        <div class="content">
+          <br>
+          <div>
+            <label for="audio-upload">Hörbuch zum abspielen auswählen:</label>
+            <br>
+            <!-- file select button -->
+            <button style="width:120px; height:35px;" onclick="document.getElementById('audio-upload').click()">Hörbuch auswählen</button>
+            <input id="audio-upload" type="file" style="display:none"/>
+          </div>
+          <br>
+          <p id=title></p>
+          <audio controls id=audio style="display:none">
+            <source src="" type="audio/ogg">
+            <source src="" type="audio/mpeg">
+          </audio>
+        </div>
+      </main>
+    </div>
     <script>
-    function changeHandler({
-  target
-}) {
-  // Make sure we have files to use
-  if (!target.files.length) return;
+      // function to handle the audio file change
+      function changeHandler({
+        target
+      }) {
+        // Make sure we have files to use
+        if (!target.files.length) return;
 
-  // Create a blob that we can use as an src for our audio element
-  const urlObj = URL.createObjectURL(target.files[0]);
+        // Create a blob that we can use as an src for our audio element
+        const urlObj = URL.createObjectURL(target.files[0]);
 
-  // Create an audio element
-  const audio = document.createElement("audio");
+        // Create an audio element
+        const audio = document.getElementById("audio");
+        // Display the audio element
+        document.getElementById("audio").style.display = "initial";
+        // Get the title element
+        const title=document.getElementById("title");
+        // Set the title of the audio
+        title.innerText = this.files[0].name;
 
-  // Clean up the URL Object after we are done with it
-  audio.addEventListener("load", () => {
-    URL.revokeObjectURL(urlObj);
-  });
+        // Clean up the URL Object after we are done with it
+        audio.addEventListener("load", () => {
+          URL.revokeObjectURL(urlObj);
+        });
 
-  // Append the audio element
-  document.body.appendChild(audio);
+        // Allow us to control the audio
+        audio.controls = "true";
 
-  // Allow us to control the audio
-  audio.controls = "true";
+        // Set the src and start loading the audio from the file
+        audio.src = urlObj;
+        // set the starting speed of the audio
+        audio.playbackRate=1.30;
+      }
 
-  // Set the src and start loading the audio from the file
-  audio.src = urlObj;
-}
+      document
+        .getElementById("audio-upload")
+        .addEventListener("change", changeHandler);
+      // Sticky Navigation Bar
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
 
-document
-  .getElementById("audio-upload")
-  .addEventListener("change", changeHandler);</script>
-</div>
-</div>
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-if (window.pageYOffset >= sticky) {
-navbar.classList.add("sticky")
-} else {
-navbar.classList.remove("sticky");
-}
-}
-</script>
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>

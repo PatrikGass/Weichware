@@ -8,11 +8,8 @@
   </head>
   <body>
     <div class="container">
-    <header id="navbar">
-
-        <img src="symbol.png" alt"logo" class"logo" width="70" height="50">
-
-        <nav >
+      <header id="navbar">
+        <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Text-to-Speech.html">Text-to-Speech</a></li>
@@ -20,39 +17,42 @@
             <li><a href="Account.html">Mein Konto</a></li>
           </ul>
         </nav>
-
-    </header>
-    <main>
-      <div class="content">
-      <section id="input">
-        <form>
-          <br></br>
-          <label for="pdf-file">PDF Datei auswählen:</label><br>
-          <br><input type="file" id="pdf-file" accept="application/pdf">
-        </form>
-      </section>
-      <section id="convert">
-        <h2>Konvertieren</h2>
-        <button id="convert-button">Zu Hörbuch konvertieren</button>
-      </section>
-</div>
-    </main>
-
-    <script src="script.js"></script>
+      </header>
+      <main>
+        <div class="content">
+          <section id="input">
+            <form>
+              <label for="pdf-file">PDF Datei auswählen:</label>
+              <br>
+              <br>
+              <!-- file select button -->
+              <input type="file" id="pdf-file" accept="application/pdf">
+            </form>
+          </section>
+          <section id="convert">
+            <h2>Konvertieren</h2>
+            <!-- conversion button -->
+            <button id="convert-button">Zu Hörbuch konvertieren</button>
+          </section>
+        </div>
+      </main>
     </div>
+    <script src="script.js"></script>
     <script>
-window.onscroll = function() {myFunction()};
+      // Sticky Navigation Bar
+      window.onscroll = function() {
+        myFunction();
+      };
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
