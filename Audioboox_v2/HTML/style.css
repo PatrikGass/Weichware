@@ -1,157 +1,189 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-body {
-    margin: 0;
-    background: #FFFFFF;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 800;
+	body {
+	margin:0;
+	background:#FFFFFF;
+	font-family:'Work Sans',sans-serif;
+	font-weight:800;
 }
-
-div {
-    text-align: center;
+h1 {
+	color:#ff6600;
 }
-
-header {
-    background: #002A53;
-    overflow: hidden;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-nav {
-
-    float: right;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 23px;
-    position: relative;
-}
-
-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-nav a:hover {
-    color: #000;
-}
-
-nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: #444;
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-    width: 100%;
-}
-
-main {
-    display: flex;
-}
-
-section {
-    flex: 1;
-    padding: 1em;
-    text-align: center;
-    border: 1px solid #ccc;
-    margin: 0 1em;
-}
-
 h2 {
-    margin-top: 0;
+	color:#ff6600;
 }
-
-p,li {
-    margin: 0;
+h3 {
+	color:#FFFFFF;
+	text-decoration:underline;
 }
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    cursor: pointer;
-    margin-top: 1em;
+h4 {
+	color:#FFFFFF;
+	text-decoration:underline;
 }
-
-.logo {
-    float: left;
-    padding: 10px 0;
+p {
+	color:#000000;
 }
-
+li {
+	color:#FFFFFF;
+}
+div {
+	text-align:center;
+}
+header {
+	background:#002A53;
+	overflow:hidden;
+}
+header::after {
+	content:'';
+	display:table;
+	clear:both;
+}
+nav {
+	float:right;
+}
+nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+nav li {
+	display:inline-block;
+	margin-left:70px;
+	padding:27px;
+	position:relative;
+}
+nav a {
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px;
+	padding-right:20px;
+}
+nav a:hover {
+	color:#000;
+}
+nav a::before {
+	content:'';
+	display:block;
+	height:5px;
+	background-color:#444;
+	position:absolute;
+	top:0;
+	width:0%;
+	transition:all ease-in-out 250ms;
+}
+nav a:hover::before {
+	width:100%;
+}
+section {
+	flex:1;
+	padding:1em;
+	text-align:center;
+	margin:0 1em;
+}
+h2 {
+	margin-top:0;
+}
+.bTTS {
+	background-color:#002A53;
+	height:40px;
+	width:120px;
+	padding:1px;
+	color:white;
+	border:none;
+	cursor:pointer;
+	margin-top:1em;
+	border-radius:10px;
+}
+.bLib {
+	background-color:#002A53;
+	color:white;
+	padding:1px;
+	border:none;
+	cursor:pointer;
+	margin-top:1em;
+	border-radius:10px;
+}
+.bPremium {
+	background-color:#006e0d;
+	color:white;
+	padding:0.5em 1em;
+	border:none;
+	cursor:pointer;
+	margin-top:1em;
+	border-radius:10px;
+}
 .container {
-    background: #CCCCCC;
-    width: 1600px;
-    height: 500px;
-    margin: 0 auto;
+	position:relative;
+	background:#CCCCCC;
+	width:1600px;
+	height:850px;
+	margin:auto;
 }
-
-/* Page content */
-.content {
-    padding-top: 50px;
+.basic {
+	width:350px;
+	height:200px;
+	background-color:#002A53;
+	float:left;
+	margin:88px;
+	border-radius:25px;
+	border:3px solid #000000;
+}
+.pro {
+	width:350px;
+	height:200px;
+	background-color:#002A53;
+	float:left;
+	margin:88px;
+	border-radius:25px;
+	border:3px solid #000000;
+}
+.premium {
+	width:350px;
+	height:200px;
+	background-color:#002A53;
+	float:left;
+	margin:88px;
+	border-radius:25px;
+	border:3px solid #000000;
 }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-	height: auto;
-    position: fixed;
-    top: 0;
-    width: 1600px;
+	height:auto;
+	position:fixed;
+	top:0;
+	width:1600px;
 }
-
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-    padding-top: 50px;
+	padding-top:50px;
 }
-
 /* Style all font awesome icons */
 .fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+	padding:15px;
+	font-size:30px;
+	width:50px;
+	text-align:center;
+	text-decoration:none;
 }
-
 /* Add a hover effect if you want */
 .fa:hover {
-    opacity: 0.7;
+	opacity:0.7;
 }
-
 /* Set a specific color for each brand */
 
 
 /* Twitter */
 .fa-twitter {
-    background: #55ACEE;
-    color: white;
+	background:#55ACEE;
+	color:white;
 }
 /* Github */
 .fa-github {
-    background: #CCCCCC;
-    color: #000000;
+	background:#CCCCCC;
+	color:#000000;
 }
 /* LinkedIn */
 .fa-linkedin {
-    background: #062544;
-    color: white;
+	background:#062544;
+	color:white;
 }
