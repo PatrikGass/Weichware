@@ -5,7 +5,6 @@
     <title>Audioboox</title>
     <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js.js"></script>
   </head>
   <body>
     <div class="container">
@@ -41,29 +40,28 @@
       </main>
     </div>
     <script>
-      // get navbar and main section elements
-      var navbar = document.getElementById("navbar");
-      var mainSection = document.querySelector(".main-section");
+    // get navbar and main section elements
+    var navbar = document.getElementById("navbar");
+    var mainSection = document.querySelector("main");
 
-      // get height of navbar for use in calculations
-      var navbarHeight = navbar.offsetHeight;
+    // get height of navbar for use in calculations
+    var navbarHeight = navbar.offsetHeight;
 
-      // listen for page load and set margin for main section
-      window.addEventListener("load", function() {
+    // listen for page load and set margin for main section
+    document.addEventListener("DOMContentLoaded", function() {
+      mainSection.style.marginTop = navbarHeight + "px";
+    });
+
+    // listen for scroll event and apply sticky class to navbar
+    window.addEventListener("scroll", function() {
+      if (window.pageYOffset >= navbarHeight) {
+        navbar.classList.add("sticky");
+        mainSection.style.marginTop = "0";
+      } else {
+        navbar.classList.remove("sticky");
         mainSection.style.marginTop = navbarHeight + "px";
-      });
-
-      // listen for scroll event and apply sticky class to navbar
-      window.addEventListener("scroll", function() {
-        if (window.pageYOffset >= navbarHeight) {
-          navbar.classList.add("sticky");
-          mainSection.style.marginTop = "0";
-        } else {
-          navbar.classList.remove("sticky");
-          mainSection.style.marginTop = navbarHeight + "px";
-        }
-      });
-
+      }
+    });
     </script>
 
   </body>
