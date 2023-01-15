@@ -9,7 +9,7 @@ h1 {
 	color:#ff6600;
 }
 h2 {
-	color:#ff6600;
+	color:#000000;
 }
 h3 {
 	color:#FFFFFF;
@@ -32,6 +32,12 @@ header {
 	background:#002A53;
 	overflow:hidden;
 }
+footer{
+	background: #3d3d3d;
+
+	position: fixed;
+	width: 100%;
+}
 header::after {
 	content:'';
 	display:table;
@@ -52,7 +58,7 @@ nav li {
 	position:relative;
 }
 nav a {
-	color:#FFFFFF;
+	color:#000000;
 	text-decoration:none;
 	text-transform:uppercase;
 	font-size:14px;
@@ -114,7 +120,8 @@ h2 {
 }
 .container {
 	position:relative;
-	background:#CCCCCC;
+	background:#dedddc;
+	margin:0;
 	width:1600px;
 	height:850px;
 	margin:auto;
@@ -186,4 +193,20 @@ h2 {
 .fa-linkedin {
 	background:#062544;
 	color:white;
+}
+a:link {
+  color: White;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #002A53;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff6600;
+  background-color: transparent;
+  text-decoration: underline;
 }
