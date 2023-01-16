@@ -1,4 +1,4 @@
-#!C:\xampp\htdocs\test\python\python.exe
+#!C:\xampp\htdocs\Weichware\audioboox_v3\python\python.exe
 print("Content-Type: text/html\n\n")
 
 from gtts import gTTS
