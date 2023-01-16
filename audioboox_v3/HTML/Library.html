@@ -56,7 +56,7 @@
 						<button class="bLib" style="width:120px; height:35px;" onclick="document.getElementById('audio-upload').click()">
 							Hörbuch auswählen
 						</button>
-						<input id="audio-upload" type="file" style="display:none" />
+						<input id="audio-upload" type="file"  style="display:none"/>
 					</div>
 					<br>
 					<p id=title>
@@ -88,10 +88,6 @@
 				// Set the title of the audio
 				title.innerText = this.files[0].name;
 
-				// Clean up the URL Object after we are done with it
-				audio.addEventListener("load", () = >{
-					URL.revokeObjectURL(urlObj);
-				});
 
 				// Allow us to control the audio
 				audio.controls = "true";
