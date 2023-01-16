@@ -6,10 +6,10 @@ from PyPDF2 import PdfReader
 
 print("AudioBoox wird konvertiert (hier Werbung ohne Abo)") #Python Umgebung Test
 
-reader = PdfReader("C:/xampp/htdocs/test/uploaded-file/audioboox.pdf") #Pfad zum PDF
+reader = PdfReader("C:/xampp/htdocs/Weichware/audioboox_v3/uploaded-file/audioboox.pdf") #Pfad zum PDF
 
-totalpages = len(reader.pages) #Anzahl der Seiten 
-#print(totalpages) 
+totalpages = len(reader.pages) #Anzahl der Seiten
+#print(totalpages)
 
 page = reader.pages[0] #Liste von Objekten der Seiten hier
 parts = []
