@@ -6,24 +6,25 @@ Autor: Friese,Föll,Wilmer,Gass,Demny
 ## Dokumenthistorie
 Aufgabe                         Termin      Autor   Status    Version  
 IT-Konzept erstellen            18.10.2022  Friese  Erledigt  0 
-Bedienoberfläche erstellen                          Offen 
-Serverstruktur erstellen                            Offen 
-PHP-Programm Upload                                 Offen 
-PHP-Programm Textausgabe-API                        Offen 
-PHP-Programm Userausgabe                            Offen 
-PHP-Programm Nutzeraccount                          Offen 
-Abnahme für Projektstart                            Offen 
-Übersetzung in weitere Sprachen                     Offen 
-Android-APP Oberfläche erstellen                    Offen
-Android-APP API-TTS aufrufen                        Offen
-Android-App                                         Offen
-PDF2Text                                            Offen
-Abnahme für Projektstart       18.01.2023           Offen
+Bedienoberfläche erstellen      23.12.2022  Föll    Erledigt 
+Serverstruktur erstellen        23.12.2022  Grass   Erledigt 
+PHP-Programm Upload             23.12.2022  Föll    Erledigt 
+PHP-Programm Textausgabe-API    23.12.2022  Grass   Erledigt 
+PHP-Programm Userausgabe        23.12.2022  Föll    Erledigt 
+PHP-Programm Nutzeraccount      18.01.2023  Friese  Offen 
+Abnahme für Projektstart        17.01.2023  Friese  Offen 
+Übersetzung in weitere Sprachen   1.3.2023          Offen 
+Android-APP Oberfläche erstellen  1.3.2023          Offen
+Android-APP API-TTS aufrufen      1.3.2023          Offen
+Android-App                       1.9.2023          Offen
+PDF2Text                          1.3.2023          Offen
+Abnahme für Projektstart        23.01.2023          Offen
 
 
 
 ## Gesamtüberblick
 Ziel des Projektes ist es für Studenten eine benutzerfreundliche Anwendung zu schaffen, welche es ermöglicht Skripte, Artikel und weitere Textdokumente in PDF-Form in Audioformat umzuformen und auf mobilen Geräten zur Verfügung zu stellen. Das Projekt entstand auf der Idee der immer populärer werdenden Hörbücher, es ermöglicht beispielsweise Studenten Lernskripte auditiv wahrzunehmen und Lernen besser in den Alltag zu integrieren.  
+![Alt-Text](/Dokumentation/UseCase.png)
 
 ## Basis
 Dieses Projekt wird im Rahmen einer Seminaraufgabe im Modul Softwaretechnik-Projekt im Wintersemester 2022/2023 erstellt und bearbeitet. 
@@ -34,34 +35,18 @@ Extrahierung von Text
 Umwandlung Text zu Audioformat mit Text to Speech (TTS) 
 Ausgabe von Audio auf Endgeräten 
 
-## Anforderungen:
-
- 
-
 ## Allgemeine Bedingungen:
 PHP 
 HTML 
 Javascript 
-Android
+~~Android~~
+Python
 
-
-## Architektur:
-Durch die Anforderung der Skalierbarkeit soll die Erweiterung auf weitere I/O Formate möglichst einfach sein. Die Oberfläche soll über den Browser angesteuert werden können für den Input, wie auch die Ausgabe.   
-
-### Besondere Bemerkungen zur Architektur: 
-API Google TTS 
-pyPDF2 
-Schnittstellen als Webservice 
-API TTS 
 
 ### Anwendungsdiagramm  
-Grafische Gesamtdarstellung aller beteiligten Systeme  
-PHP-Server , API , Browser 
-welche Schnittstellen und Daten  
-Stichpunkte für den Diagramminhalt:  
+![Alt-Text](/Dokumentation/UseCase.png)
 
-## Voraussetzungen  
-
+## Voraussetzungen  zum erfolgreichem Projektabschluss
 Programmierkenntnisse in PHP
 Programmierkenntnisse in Android/Java
 Text-to-speech-Umwandlung  
@@ -69,14 +54,13 @@ Text-to-speech-Umwandlung
 ### Software  
 Welche Software muss auf welchen Systemen vorhanden sein.  
 Benutzer: Webbrowser 
-System: Server mit Datenablage + PHP Support 
+System: Server mit Datenablage + PHP Support + SQL-Datenbank
 Extern: TTS-API 
-
-  
 
 ### Hardware  
 Webserver  
-Unterstützt PHP
+Unterstützt PHP&SQL
+Internetanbindung
 
 ### Daten 
 Text im gängigen Format 
@@ -84,7 +68,8 @@ Audio Output
 Evtl. Benutzerkonto 
 
 ## Zielsetzungen  
-Das Ziel dieser Software ist die Bereitstellung von eine Audioausgabe von Testdokumenten mit einem Schwerpunkt auf Usability und Wartbarkeit.  
+![Alt-Text](/Dokumentation/Slide4.jpg)
+Das Ziel dieser Software isdie Bereitstellung von eine Audioausgabe von Testdokumenten mit einem Schwerpunkt auf Usability und Wartbarkeit.  
 
 ### Software  
 Das Webinterface soll auf den aktuellen Versionen von Firefox Klar, Microsoft Edge und Chrome Mobil lauffähig sein.  
@@ -109,24 +94,41 @@ Die Textdokumente werden durch den User bereitgestellt bzw. Hochgeladen. Diese D
 
 ## Überblick  
 
-  Die Textdateien sollen in gängigen Formaten verwendet werden, unter die gängige fallen pdf, docs, odt und txt. Dies dient dazu, dass die Besonderheiten der einzelnen Formate beachtet werden kann, ohne dass jegliche Nischenformate verarbeitet werden können, da dies nicht in einem akzeptablen Kosten-Nutzen-Faktor steht.  
+Die Textdateien sollen in gängigen Formaten verwendet werden, unter die gängige fallen pdf, docs, odt und txt. Dies dient dazu, dass die Besonderheiten der einzelnen Formate beachtet werden kann, ohne dass jegliche Nischenformate verarbeitet werden können, da dies nicht in einem akzeptablen Kosten-Nutzen-Faktor steht.  
 
 Eine stabile Verbindung ist wichtig, damit die Audiowiedergabe möglichst ohne Unterbrechung und Verzögerung funktioniert. Alternativ kann man über eine Downloadmöglichkeit nachdenken, ob diese die Probleme nicht verringern könnten. Die angebotenen Datentypen sollten auch in einem gängigen Format angeboten werden.  
 
   
 
-## Architektur  
+## Architektur:
+Durch die Anforderung der Skalierbarkeit soll die Erweiterung auf weitere I/O Formate möglichst einfach sein. Die Oberfläche soll über den Browser angesteuert werden können für den Input, wie auch die Ausgabe.
+Die Zugriff der PHP-Dateien auf die interne Dateiablage ist notwendig. Der User kommuniziert auf dem Server mit einem PHP-Server. Das Einloggen erfolgt mittel SQL-Datenbank.
+Die Umwandlung einer hochgeladenen Datei erfolgt mittels API-Schnittstelle auf einem Google-Server. 
+
+![Alt-Text](/Dokumentation/Sequenzdiagramm.png)  
+ 
+ 
+### Besondere Bemerkungen zur Architektur: 
+API Google TTS 
+pyPDF2 
+Schnittstellen als Webservice 
+API TTS 
+ 
 
 
-### Datenflussdiagramm  
-Wird nachgereicht 
+ 
+ 
+### Datenflussdiagramm 
+ 
+![Alt-Text](/Dokumentation/Sequenzdiagramm.png)
 
-### Datenentitäten  
+### Datenentitäten 
+
 #### Was  
 Testdokument 
 Audiodatei 
 
-#### Woher  
+#### Woher kommen 
 Usereingabe 
 Bereitstellung Browser 
 Download   
@@ -176,7 +178,6 @@ Zugriff auf Filesystem + spricht Text-to-Speech an
 ## Verarbeitung  
 
   
-
 ## Anforderungen: gängige Formate, Wartbarkeit, skalierbar, Audiooption, Filesystem, Backups 
 
 ## Überblick  
