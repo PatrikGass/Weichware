@@ -23,8 +23,9 @@ Abnahme für Projektstart        23.01.2023          Offen
 
 
 ## Gesamtüberblick
+![Alt-Text](/Dokumentation/Slide1.jpg)
 Ziel des Projektes ist es für Studenten eine benutzerfreundliche Anwendung zu schaffen, welche es ermöglicht Skripte, Artikel und weitere Textdokumente in PDF-Form in Audioformat umzuformen und auf mobilen Geräten zur Verfügung zu stellen. Das Projekt entstand auf der Idee der immer populärer werdenden Hörbücher, es ermöglicht beispielsweise Studenten Lernskripte auditiv wahrzunehmen und Lernen besser in den Alltag zu integrieren.  
-![Alt-Text](/Dokumentation/UseCase.png)
+
 
 ## Basis
 Dieses Projekt wird im Rahmen einer Seminaraufgabe im Modul Softwaretechnik-Projekt im Wintersemester 2022/2023 erstellt und bearbeitet. 
