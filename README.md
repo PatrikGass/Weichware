@@ -20,7 +20,7 @@ Vorraussetzung: PHP-Server und SQL-Server-Umgebung nach Kapitel 2.Infrasturtur
 8. Anmelden mit Testuser test pw:test mittels Freeaccount
 9. Upload einer Test.pdf
 10. Abspielen der Test.mp3
-
+-
 1. Download des Verzeichnisses audioboox_final als zip aus github
 2. audioboox_final.zip im xampp-Order C:/xampp/htdocs/ entpacken
 3. XAMPP Control Panel öffnen und "Apache" und "MySQL" starten
