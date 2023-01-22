@@ -4,21 +4,22 @@ Version: 0
 Autor: Friese,Föll,Wilmer,Gass,Demny 
 
 ## Dokumenthistorie
-Aufgabe                         Termin      Autor   Status    Version  
-IT-Konzept erstellen            18.10.2022  Friese  Erledigt  0   
-Bedienoberfläche erstellen      23.12.2022  Föll    Erledigt   
-Serverstruktur erstellen        23.12.2022  Grass   Erledigt   
-PHP-Programm Upload             23.12.2022  Föll    Erledigt   
-PHP-Programm Textausgabe-API    23.12.2022  Grass   Erledigt   
-PHP-Programm Userausgabe        23.12.2022  Föll    Erledigt   
-PHP-Programm Nutzeraccount      18.01.2023  Friese  Erledigt   
-Abnahme für Projektstart        17.01.2023  Friese  Offen   
-Übersetzung in weitere Sprachen   1.3.2023          Offen   
-Android-APP Oberfläche erstellen  1.3.2023          Offen  
-Android-APP API-TTS aufrufen      1.3.2023          Offen  
-Android-App                       1.9.2023          Offen  
-PDF2Audio                         1.3.2023          Offen  
-Abnahme für Projektstart        23.01.2023          Offen  
+| Aufgabe   |      Termin      |  Autor |Status |Version |
+|----------|:-------------:|------:|------:|------:|
+|IT-Konzept erstellen      |       18.10.2022|  Friese | Erledigt|  0 |  
+|Bedienoberfläche erstellen |      23.12.2022 | Föll |   Erledigt  | |
+|Serverstruktur erstellen  |      23.12.2022  |Grass|   Erledigt  | |
+|PHP-Programm Upload        |      23.12.2022|  Föll |   Erledigt   ||
+|PHP-Programm Textausgabe-API |    23.12.2022  |Grass  | Erledigt   ||
+|PHP-Programm Userausgabe    |     23.12.2022 | Föll  |  Erledigt   ||
+|PHP-Programm Nutzeraccount  |   18.01.2023 | Friese|  Erledigt|  |
+|Abnahme für Projektstart    |    17.01.2023 | Friese|  Offen   ||
+|Übersetzung in weitere Sprachen|  1.3.2023  |  |      Offen   ||
+|Android-APP Oberfläche erstellen|1.3.2023  |  |      Offen  ||
+|Android-APP API-TTS aufrufen|1.3.2023     |   |  Offen  ||
+|Android-App            |1.9.2023       |  | Offen  ||
+|PDF2Audio             |   1.3.2023    |  |    Offen  ||
+|Abnahme für Projektstart |23.01.2023    |   |   Offen|  |
 
 
 
