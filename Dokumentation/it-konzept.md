@@ -5,27 +5,29 @@ Autor: Friese,Föll,Wilmer,Gass,Demny
 
 ## Dokumenthistorie
 Aufgabe                         Termin      Autor   Status    Version  
-IT-Konzept erstellen            18.10.2022  Friese  Erledigt  0 
-Bedienoberfläche erstellen      23.12.2022  Föll    Erledigt 
-Serverstruktur erstellen        23.12.2022  Grass   Erledigt 
-PHP-Programm Upload             23.12.2022  Föll    Erledigt 
-PHP-Programm Textausgabe-API    23.12.2022  Grass   Erledigt 
-PHP-Programm Userausgabe        23.12.2022  Föll    Erledigt 
-PHP-Programm Nutzeraccount      18.01.2023  Friese  Offen 
-Abnahme für Projektstart        17.01.2023  Friese  Offen 
-Übersetzung in weitere Sprachen   1.3.2023          Offen 
-Android-APP Oberfläche erstellen  1.3.2023          Offen
-Android-APP API-TTS aufrufen      1.3.2023          Offen
-Android-App                       1.9.2023          Offen
-PDF2Text                          1.3.2023          Offen
-Abnahme für Projektstart        23.01.2023          Offen
+IT-Konzept erstellen            18.10.2022  Friese  Erledigt  0   
+Bedienoberfläche erstellen      23.12.2022  Föll    Erledigt   
+Serverstruktur erstellen        23.12.2022  Grass   Erledigt   
+PHP-Programm Upload             23.12.2022  Föll    Erledigt   
+PHP-Programm Textausgabe-API    23.12.2022  Grass   Erledigt   
+PHP-Programm Userausgabe        23.12.2022  Föll    Erledigt   
+PHP-Programm Nutzeraccount      18.01.2023  Friese  Erledigt   
+Abnahme für Projektstart        17.01.2023  Friese  Offen   
+Übersetzung in weitere Sprachen   1.3.2023          Offen   
+Android-APP Oberfläche erstellen  1.3.2023          Offen  
+Android-APP API-TTS aufrufen      1.3.2023          Offen  
+Android-App                       1.9.2023          Offen  
+PDF2Audio                         1.3.2023          Offen  
+Abnahme für Projektstart        23.01.2023          Offen  
 
 
 
 ## Gesamtüberblick
 ![Alt-Text](/Dokumentation/Slide1.jpg)
 Ziel des Projektes ist es für Studenten eine benutzerfreundliche Anwendung zu schaffen, welche es ermöglicht Skripte, Artikel und weitere Textdokumente in PDF-Form in Audioformat umzuformen und auf mobilen Geräten zur Verfügung zu stellen. Das Projekt entstand auf der Idee der immer populärer werdenden Hörbücher, es ermöglicht beispielsweise Studenten Lernskripte auditiv wahrzunehmen und Lernen besser in den Alltag zu integrieren.  
+Text-to-Speech nur mit gängigen Formaten im I/O. Schnittstelle zwischen Filesystem und Input, sowie Filesystem und Output 
 
+## Anforderungen: gängige Formate, Wartbarkeit, skalierbar, Audiooption, Filesystem, Backups 
 
 ## Basis
 Dieses Projekt wird im Rahmen einer Seminaraufgabe im Modul Softwaretechnik-Projekt im Wintersemester 2022/2023 erstellt und bearbeitet. 
@@ -176,13 +178,6 @@ API Text2Speech
 #### Initiator 
 Zugriff auf Filesystem + spricht Text-to-Speech an 
 
-## Verarbeitung  
-
-  
-## Anforderungen: gängige Formate, Wartbarkeit, skalierbar, Audiooption, Filesystem, Backups 
-
-## Überblick  
-Text-to-Speech nur mit gängigen Formaten im I/O. Schnittstelle zwischen Filesystem und Input, sowie Filesystem und Output 
 
 ## Zugriffsdiagramm 
 Wird nachgereicht 
@@ -211,3 +206,26 @@ Clicktest
 HTML-Test 
 Benutzertest 
 100 Testfälle mit verschiedenen Texten und Skripten 
+  
+##Testsysteme
+  1.1.23
+  Friese XAMPP-Server
+  22.1.23
+  Friese XAMPP-Server
+  http://audioboox.bplaced.net
+  22.23
+  Gass XAMPP-Server
+  
+  
+##Operate
+Die Anwendung wird bei Verwendung überwacht. Updates der Betriebssysteme findet im 4 Wochen Rhythmus statt. 
+Ausnahme bei kritischen Sicherheitslücken dann kurzfristig. Es werden tägliche Backups erstellt, Full Backups am Sonntag, differentielle jeden anderen Tag um 23 Uhr. 
+Bei Updates von Audioboox wird eine Mitteilung auf der Seite angezeigt mit geschätzten Wartungszeitraum. 
+
+##Monitor
+Die Anwendung Scom überwacht unsere verwendete Struktur. 
+Sie versendet automatische E-Mail Notifikationen an das Team, wenn Probleme auftreten mit dem Rang Fehler oder höher. 
+Zur Überwachung werden Regeln definiert.
+  
+ 
+
