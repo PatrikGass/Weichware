@@ -207,22 +207,22 @@ HTML-Test
 Benutzertest 
 100 Testfälle mit verschiedenen Texten und Skripten 
   
-##Testsysteme
-  1.1.23
-  Friese XAMPP-Server
-  22.1.23
-  Friese XAMPP-Server
-  http://audioboox.bplaced.net
-  22.23
-  Gass XAMPP-Server
+## Testsysteme
+  1.1.23  
+  Friese XAMPP-Server   
+  22.1.23  
+  Friese XAMPP-Server  
+  http://audioboox.bplaced.net  
+  22.23  
+  Gass XAMPP-Server  
   
   
-##Operate
+## Operate
 Die Anwendung wird bei Verwendung überwacht. Updates der Betriebssysteme findet im 4 Wochen Rhythmus statt. 
 Ausnahme bei kritischen Sicherheitslücken dann kurzfristig. Es werden tägliche Backups erstellt, Full Backups am Sonntag, differentielle jeden anderen Tag um 23 Uhr. 
 Bei Updates von Audioboox wird eine Mitteilung auf der Seite angezeigt mit geschätzten Wartungszeitraum. 
 
-##Monitor
+## Monitor
 Die Anwendung Scom überwacht unsere verwendete Struktur. 
 Sie versendet automatische E-Mail Notifikationen an das Team, wenn Probleme auftreten mit dem Rang Fehler oder höher. 
 Zur Überwachung werden Regeln definiert.
