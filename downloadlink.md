@@ -1,2 +1,2 @@
 Downloadfiles here:
-http://audioboox.bplaced.net/audoboox/htdocs.zip
+http://audioboox.bplaced.net/audioboox/htdocs.zip
