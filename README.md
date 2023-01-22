@@ -9,15 +9,16 @@ Ziel der Software ist es Textdateiformate zu Audiodateiformate zu konvertieren.
 ![Alt-Text](/Dokumentation/Sequenzdiagramm.png)
 
 ## 3. Installationsanleitung
-Vorraussetzung: PHP-Server und SQL-Server-Umgebung nach Kapitel 2.Infrasturtur 
+Vorraussetzung: Installierter Python auf dem PHP-Server(siehe Anleitung) und SQL-Server-Umgebung nach Kapitel 2.Infrasturtur 
 1. Download xyz.zip
-2. Entpacken der xyz.zip auf dem Server oder im xampp-Order C:/xampp/htdocs/audioboxx
+2. Entpacken der xyz.zip auf dem Server oder im xampp-Order C:/xampp/htdocs/Weichware
 3. Starten des PHP und SQL-Servers
-4. Einrichten der SQL-Datenbank unter xampp https://localhost/phpmyadmin
-5. Import der SQL-Datenbank sql-Datenbank audioboox/data/user.sql
-6. Aufruf der Adresse des Servers oder per Xaamp via localhost/audioboox/index.php
+4. Einrichten der SQL-Datenbank unter xampp https://localhost/phpmyadmin (keine sichere Verbindung bestätigen)
+5. Text aus database.sql kopieren
+6. In Phpmyadmin in der Testdatenbank auf den Reiter Sql und in das Eingabefeld einfügen und mit okay bestätigen.
+6. Aufruf der Adresse des Servers oder per Xaamp via localhost/weichware/
 7. Aufruf der Adresse des Servers außerhalb des Heimnetzwerkes nur via Freigabe des Routers
-8. Anmelden mit Testuser test pw:test mittels Freeaccount
+8. Jetzt registrieren mit Testuser test pw:test mittels Testaccount
 9. Upload einer Test.pdf
 10. Abspielen der Test.mp3
 -
@@ -26,10 +27,20 @@ Vorraussetzung: PHP-Server und SQL-Server-Umgebung nach Kapitel 2.Infrasturtur
 3. XAMPP Control Panel öffnen und "Apache" und "MySQL" starten
 4. im Browser http://localhost/audioboox_final/Startseite/index.php aufrufen
 
-## 4. Testumgebung
-XAMPPv3.3.0
+## 4. Testumgebung XAMPP
+XAMPPv3.3.0 PHP und SQL
+Python
+-->Test von Umwandlungsfunktion
+-->Userfunktion
 
-## 5.IT-Konzept
+##5. Testumgebung Webhosting
+http://audioboox.bplaced.net/
+ohne Umwandlungsfunktion, weil es sich um Webhosting und um keinen Server handelt.
+-->Userfunktion
+-->Datenbankfunktion
+-->Mailfunktion
+
+## 6.IT-Konzept
 Diese Datei dient nur der ersten Installation. Die vollständige Dokumentation befindet sich in der IT-Konzept.md
 1. XAMPP Control Panel öffnen
 2. bei "Apache" auf Konfig klicken und anschließend Apache(hhtpd.conf)
@@ -40,7 +51,7 @@ Diese Datei dient nur der ersten Installation. Die vollständige Dokumentation b
 5. Nach "file_uploads" suchen und sicherstellen, dass mit "file_uploads = On" der Fileupload funktioniert
 
 
-## 5.Autoren
+## 7.Autoren
 Patrik Gass, 5. Semester Wirtschaftsinformatik Online, Werkstudent im Fachbereich Arbeitsplatz und Kommunikation
 Erik Wilmer HIER FEHLT TEXT
 Roberto Demny HIER FEHLT TEXT
