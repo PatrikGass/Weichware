@@ -21,19 +21,32 @@ Vorraussetzung: PHP-Server und SQL-Server-Umgebung nach Kapitel 2.Infrasturtur
 9. Upload einer Test.pdf
 10. Abspielen der Test.mp3
 
+(1. Download des Verzeichnisses audioboox_final als zip aus github
+2. audioboox_final.zip im xampp-Order C:/xampp/htdocs/ entpacken
+3. XAMPP Control Panel öffnen und "Apache" und "MySQL" starten
+4. im Browser http://localhost/audioboox_final/Startseite/index.php aufrufen)
+
 ## 4. Testumgebung
 XAMPPv3.3.0
 
 ## 5.IT-Konzept
 Diese Datei dient nur der ersten Installation. Die vollständige Dokumentation befindet sich in der IT-Konzept.md
+1. XAMPP Control Panel öffnen
+2. bei "Apache" auf Konfig klicken und anschließend Apache(hhtpd.conf)
+3. folgendes am Ende des Dokuments einfügen: 
+          AddHandler cgi-script .py
+          ScriptInterpreterSource Registry-Strict
+4. im XAMPP Control Panel unter "Apache" auf Konfig klicken und anschließend PHP(php.ini) gehen
+5. Nach "file_uploads" suchen und sicherstellen, dass mit "file_uploads = On" der Fileupload funktioniert
+
 
 ## 5.Autoren
-Patrik Gass HIER FEHLT TEXT
+Patrik Gass, 5. Semester Wirtschaftsinformatik Online, Werkstudent im Fachbereich Arbeitsplatz und Kommunikation
 Erik Wilmer HIER FEHLT TEXT
 Roberto Demny HIER FEHLT TEXT
 Jan-Marek Friese, 5.Semster Wirtschaftsinformatik Online, Erfahrung in Projekte und Programmierung
 Friedrich Föll HIER FEHLT TEXT
 
-Die Idee für das Projekt der Weichware Group kommt von Patriks Gass. Umgesetzt wird es von allen Teilnehmern. Die Programmieraufgabe hat Patriks Gass übernommen. Die Dokumentation wird von … erstellt. Das Pitchdeck wurde von Erik Wilmer entwickelt und ausgearbeitet. Das Dokumentation und das IT-Konzept wurde von Roberto Demny und Jan-Marek Friese geschrieben.
+Die Idee für das Projekt der Weichware Group kommt von Patriks Gass. Umgesetzt wird es von allen Teilnehmern. Die Programmieraufgabe haben Patriks Gass, Friedrich Föll und Jan-Marek Friese übernommen. Die Dokumentation wird von … erstellt. Das Pitchdeck und Endpräsentation wurde von Erik Wilmer entwickelt und ausgearbeitet. Die Dokumentation und das IT-Konzept wurde von Roberto Demny und Jan-Marek Friese geschrieben.
 
 
