@@ -37,19 +37,20 @@ Ziel der Software ist es Textdateiformate zu Audiodateiformate zu konvertieren.
 
 ## 3. Installationsanleitung
 Vorraussetzung: Installiertere Python & XAMPP\
-APACHE XAMPP: https://www.apachefriends.org/de/download.html, Python: https://www.python.org/downloads/ 
-2.Infrasturtur 
+Apache XAMPP: https://www.apachefriends.org/de/download.html, Python: https://www.python.org/downloads/ 
+
 1. Download htdocs.zip oder Download des Verzeichnisses Code als zip aus github https://github.com/PatrikGass/Weichware.git
-2. Entpacken der htdocs.zip oder des Verzeichnise "Code" auf dem Server oder im xampp-Order C:/xampp/htdocs/Weichware
+2. Entpacken die zip und füge den Ordner Weichware auf dem Server oder im xampp-Order C:/xampp/htdocs/
 3. Starten des PHP und SQL-Servers
-4. Einrichten der SQL-Datenbank unter xampp https://localhost/phpmyadmin (keine sichere Verbindung bestätigen)
+4. Einrichten der SQL-Datenbank unter xampp https://localhost/phpmyadmin (hier keine sichere Verbindung bestätigen)
 5. Text aus database.sql kopieren
 6. In Phpmyadmin in der Testdatenbank auf den Reiter Sql und in das Eingabefeld einfügen und mit okay bestätigen.
 6. Aufruf der Adresse des Servers oder per Xaamp via Browser http://localhost/Weichware/ aufrufen
 7. Aufruf der Adresse des Servers außerhalb des Heimnetzwerkes nur via Freigabe des Routers
-8. Jetzt registrieren mit Testuser test@test.de pw:test mittels Testaccount
-9. Upload einer Test.pdf
-10. Abspielen der Test.mp3 in Bibliothek/Archiv
+8. 3a befolgen: Python und File-Upload in XAMPP aktivieren
+9. Jetzt registrieren mit Testuser test@test.de pw:test mittels Testaccount
+10. Upload einer Test.pdf
+11. Abspielen der Test.mp3 in Bibliothek/Archiv
 
 ## 3a Python und File-Upload in XAMPP aktivieren
 1. XAMPP Control Panel öffnen
