@@ -17,8 +17,7 @@ include("templates/header.inc.php");
 Hallo <?php echo htmlentities($user['vorname']); ?>,<br>
 Herzlich Willkommen im internen Bereich!<br><br>
  
-<?php if(!(is_dir('audioboox/profiles/'.$user['id']) OR is_file('audioboox/profiles/'.$user['id']) OR is_link('audioboox/profiles/'.$user['id']) ))
-    return mkdir ('audioboox/profiles/'.$user['id'], 0700); ?>
+
 
 
 <div class="panel panel-default">

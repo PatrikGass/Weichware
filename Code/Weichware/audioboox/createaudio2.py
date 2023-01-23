@@ -1,15 +1,16 @@
 #!C:\xampp\htdocs\Weichware\audioboox\python\python.exe
 print("Content-Type: text/html\n\n")
 
+
 from gtts import gTTS
 from PyPDF2 import PdfReader
 
-print("AudioBoox wird konvertiert (hier Werbung ohne Abo)") #Python Umgebung Test
 
-reader = PdfReader("C:/xampp/htdocs/Weichware/audioboox/uploaded-file/audioboox.pdf") #Pfad zum PDF
+print("AudioBoox wird konvertiert <br> <img src='werbung.jpg'>") #Python Umgebung Test
 
-totalpages = len(reader.pages) #Anzahl der Seiten 
-#print(totalpages) 
+reader = PdfReader("uploaded-file/audioboox.pdf") #Pfad zum PDF
+
+totalpages = len(reader.pages) #Anzahl der Seiten
 
 page = reader.pages[0] #Liste von Objekten der Seiten hier
 parts = []
@@ -29,3 +30,4 @@ tts = gTTS(text = text_body, #Text zu Sprache, vlt durch pyttsx3 ersetzen
     slow = False)
 tts.save("audiofile/audioboox.mp3") #mp3 Speichern (dauert einige Sekunden)
 print("<script>window.close();</script>")
+
