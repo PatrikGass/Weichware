@@ -45,7 +45,7 @@ Vorraussetzung: Installierter Python auf dem PHP-Server(siehe Anleitung.md) und 
 1. Download des Verzeichnisses Weichware-main als zip aus github
 2. den Ordner audioboox_final auf der zip im xampp-Order C:/xampp/htdocs/ entpacken
 3. XAMPP Control Panel öffnen und "Apache" und "MySQL" starten
-4. im Browser http://localhost/audioboox_final/Startseite/index.php aufrufen
+4. im Browser http://localhost/Weichware/ aufrufen
 
 ## 4. Testumgebung XAMPP
 XAMPPv3.3.0 PHP und SQL sowie Python
@@ -102,11 +102,11 @@ Diese Datei dient nur der ersten Installation. Die vollständige Dokumentation b
 
 ## 8.Autoren
 Patrik Gass, 5. Semester Wirtschaftsinformatik Online, Werkstudent im Fachbereich Arbeitsplatz und Kommunikation
-Erik Wilmer HIER FEHLT TEXT
-Roberto Demny HIER FEHLT TEXT
+Erik Wilmer, Präsentationen
+Roberto Demny IT-Konzept
 Jan-Marek Friese, 5.Semster Wirtschaftsinformatik Online, Erfahrung in Projekte und Programmierung
-Friedrich Föll HIER FEHLT TEXT
+Friedrich Föll Programmierung PY/PHP
 
-Die Idee für das Projekt der Weichware Group kommt von Patriks Gass. Umgesetzt wird es von allen Teilnehmern. Die Programmieraufgabe haben Patriks Gass, Friedrich Föll und Jan-Marek Friese übernommen. Die Dokumentation wird von … erstellt. Das Pitchdeck und Endpräsentation wurde von Erik Wilmer entwickelt und ausgearbeitet. Die Dokumentation und das IT-Konzept wurde von Roberto Demny und Jan-Marek Friese geschrieben.
+Die Idee für das Projekt der Weichware Group kommt von Patriks Gass. Umgesetzt wird es von allen Teilnehmern. Die Programmieraufgabe haben Patriks Gass, Friedrich Föll und Jan-Marek Friese übernommen. Die Dokumentation wird von Jan-Marek Friese erstellt. Das Pitchdeck und Endpräsentation wurde von Erik Wilmer entwickelt und ausgearbeitet. Die Dokumentation und das IT-Konzept wurde von Roberto Demny und Jan-Marek Friese geschrieben.
 
 
