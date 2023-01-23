@@ -1,0 +1,18 @@
+Um Audioboox verwenden zu können muss einer Server mit Python zur Verfügung stehen.
+Dies ist eine Anleitung für Python auf Windows für XAMPP
+
+    I
+Prüfen, ob Python installiert ist:
+cmd.exe öffnen
+py --version
+python --version
+Wenn Python installiert ist, erscheint die installierte Versionsnummer.
+Python kann hier heruntergeladen werden: https://www.python.org/downloads/
+
+Nach der Installation muss in der Konfiguration von XAMPPs Apache "httpd.conf" angepasst werden.
+XAMPPS Controll-Panel öffnen
+Klick auf Apache-Config
+Dropdown-Menü mit httpd.conf auswählen
+Zeilen unten hinzufügen: httpd.conf: 
+AddHandler cgi-script .py 
+ScriptInterpreterSource Registry-Strict
