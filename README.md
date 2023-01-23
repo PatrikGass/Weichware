@@ -87,6 +87,8 @@ ohne Umwandlungsfunktion, weil es sich um Webhosting und um keinen Server handel
 Entwickelt der Programmdatei in PHP oder PY
 Überprüfung durch Teammitglied
 Upload auf Git
+Kanban geupdatet
+wöchentliches Teammeeting Fortschritte vorgestellt
 
 ## 7. Sicherheit
 ### geschützte Useraccounts
