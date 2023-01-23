@@ -1,6 +1,9 @@
 # Weichware - Audioboox 2023
-Softwaretechnik Projekt
- 
+Softwaretechnik Projekt 
+Projektname: Weichware – Audioboox 
+Version: 1 
+Autor: Friese,Föll,Wilmer,Gass,Demny 
+
 ## 1. Ziele der Software
 Ziel der Software ist es Textdateiformate zu Audiodateiformate zu konvertieren.
 ![Alt-Text](/Dokumentation/UseCase.png)
@@ -30,7 +33,7 @@ Ziel der Software ist es Textdateiformate zu Audiodateiformate zu konvertieren.
 
 ## 3. Installationsanleitung
 Vorraussetzung: Installierter Python auf dem PHP-Server(siehe Anleitung.md), aktivierter File-Upload und SQL-Server-Umgebung nach Kapitel 2.Infrasturtur 
-1. Download htdocs.zip oder Download des Verzeichnisses Code als zip aus github
+1. Download htdocs.zip oder Download des Verzeichnisses Code als zip aus github https://github.com/PatrikGass/Weichware.git
 2. Entpacken der htdocs.zip oder des Verzeichnise "Code" auf dem Server oder im xampp-Order C:/xampp/htdocs/Weichware
 3. Starten des PHP und SQL-Servers
 4. Einrichten der SQL-Datenbank unter xampp https://localhost/phpmyadmin (keine sichere Verbindung bestätigen)
