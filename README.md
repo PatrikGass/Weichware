@@ -121,6 +121,6 @@ Roberto Demny IT-Konzept
 Jan-Marek Friese, 5.Semster Wirtschaftsinformatik Online, Erfahrung in Projekte und Programmierung
 Friedrich Föll Programmierung PY/PHP
 
-Die Idee für das Projekt der Weichware Group kommt von Patriks Gass. Umgesetzt wird es von allen Teilnehmern. Die Programmieraufgabe haben Patriks Gass, Friedrich Föll und Jan-Marek Friese übernommen. Die Dokumentation wird von Jan-Marek Friese erstellt. Das Pitchdeck und Endpräsentation wurde von Erik Wilmer entwickelt und ausgearbeitet. Die Dokumentation und das IT-Konzept wurde von Roberto Demny und Jan-Marek Friese geschrieben.
+Die Idee für das Projekt der Weichware Group kommt von Patriks Gass. Umgesetzt wird es von allen Teilnehmern. Die Programmieraufgabe haben Patriks Gass, Friedrich Föll und Jan-Marek Friese übernommen. Die Dokumentation wird von Jan-Marek Friese erstellt. Das Pitchdeck und Endpräsentation wurde von Erik Wilmer mit Unterstütung des Teams entwickelt und ausgearbeitet. Die Dokumentation und das IT-Konzept wurde von Roberto Demny und Jan-Marek Friese geschrieben.
 
 
