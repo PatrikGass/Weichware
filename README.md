@@ -36,7 +36,8 @@ Ziel der Software ist es Textdateiformate zu Audiodateiformate zu konvertieren.
 ![Alt-Text](/Dokumentation/Sequenzdiagramm.png)
 
 ## 3. Installationsanleitung
-Vorraussetzung: Installiertere Python auf dem PHP-Server(siehe Anleitung.md), aktivierter File-Upload und SQL-Server-Umgebung nach Kapitel 2.Infrasturtur 
+Vorraussetzung: Installiertere Python auf dem PHP-Server(siehe Anleitung.md), aktivierter File-Upload und SQL-Server-Umgebung nach Kapitel \APACHE XAMPP: https://www.apachefriends.org/de/download.html, Python: https://www.python.org/downloads/\
+2.Infrasturtur 
 1. Download htdocs.zip oder Download des Verzeichnisses Code als zip aus github https://github.com/PatrikGass/Weichware.git
 2. Entpacken der htdocs.zip oder des Verzeichnise "Code" auf dem Server oder im xampp-Order C:/xampp/htdocs/Weichware
 3. Starten des PHP und SQL-Servers
@@ -95,7 +96,7 @@ Entwickung der Programmdatei in PHP oder PY\
 Überprüfung durch Teammitglied\
 Upload auf Git\
 Kanban geupdatet\
-wöchentliches Teammeeting Fortschritte vorgestellt\
+wöchentliches Teammeeting Fortschritte vorgestellt
 
 ## 7. Sicherheit
 ### geschützte Useraccounts
