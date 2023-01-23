@@ -70,7 +70,7 @@ ohne Umwandlungsfunktion, weil es sich um Webhosting und um keinen Server handel
 | Aufgabe   |Anzahl Versuche|      Termin      |  Tester |Status |Version |
 |----------|:------:|:--------------:|------:|------:|------:|
 | Datei upload Test PDF-Dateien |10|      18.12.2022|  Gass | Erledigt|  0 |  
-|PHP-Datei upload Test PDF-Dateien 12||       18.12.2022|  Föll | Erledigt|  0 |  
+|PHP-Datei upload Test PDF-Dateien |12|       18.12.2022|  Föll | Erledigt|  0 |  
 |PHP-Datei upload Test PDF-Dateien |10|      04.01.2023|  Friese | Erledigt|  0 | 
 |PHP-SQL Useraccount|       5| 04.01.2023| Friese | Erledigt|  0 |  
 |PHP-SQL Useraccount|      2|  15.01.2023| Gass | Erledigt|  0 |  
