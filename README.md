@@ -41,8 +41,8 @@ Apache XAMPP: https://www.apachefriends.org/de/download.html, Python: https://ww
 
 1. Download htdocs.zip oder Download des Verzeichnisses Code als zip aus github https://github.com/PatrikGass/Weichware.git
 2. Entpacken die zip und füge den Ordner Weichware auf dem Server oder im xampp-Order C:/xampp/htdocs/
-3. Starten des PHP und SQL-Servers
-4. Einrichten der SQL-Datenbank unter xampp https://localhost/phpmyadmin (hier keine sichere Verbindung bestätigen)
+3. Starten des PHP und SQL-Servers in XAMPP
+4. Einrichten der SQL-Datenbank unter XAMPP https://localhost/phpmyadmin (hier keine sichere Verbindung bestätigen)
 5. Text aus database.sql kopieren
 6. In Phpmyadmin in der Testdatenbank auf den Reiter Sql und in das Eingabefeld einfügen und mit okay bestätigen.
 6. Aufruf der Adresse des Servers oder per Xaamp via Browser http://localhost/Weichware/ aufrufen
