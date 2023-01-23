@@ -1,8 +1,12 @@
-# Weichware - Audioboox 2023
+# Weichware - Audioboox 2023 
 Softwaretechnik Projekt 
+
 Projektname: Weichware – Audioboox 
+
 Version: 1 
-Autor: Friese,Föll,Wilmer,Gass,Demny 
+
+Autor: Friese, Föll, Wilmer, Gass, Demny 
+
 
 ## 1. Ziele der Software
 Ziel der Software ist es Textdateiformate zu Audiodateiformate zu konvertieren.
