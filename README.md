@@ -53,14 +53,14 @@ ohne Mailversand, in XAMPP nicht möglich
 | Aufgabe   |Anzahl Versuche|      Termin      |  Tester |Status |Version |
 |----------|:------:|:--------------:|------:|------:|------:|
 | Datei upload Test PDF-Dateien |10|      18.12.2022|  Gass | Erledigt|  0 |  
-|PHP-Datei upload Test PDF-Dateien 12||       18.12.2022|  Föll | Erledigt|  0 |  
+|PHP-Datei upload Test PDF-Dateien |12|       18.12.2022|  Föll | Erledigt|  0 |  
 |PHP-Datei upload Test PDF-Dateien |10|      04.01.2023|  Friese | Erledigt|  0 | 
-|PHP-SQL Useraccount|       04.01.2023|5|  Friese | Erledigt|  0 |  
-|PHP-SQL Useraccount|       15.01.2023|2|  Gass | Erledigt|  0 |  
-|PY-Umwandlung von Dateien|       15.12.2022|20|  Gass | Erledigt|  0 |  
-|PY-Umwandlung von Dateien|       15.12.2022|20|  Föll | Erledigt|  0 |  
-|PY-Umwandlung von Dateien|       15.12.2022|10|  Friese | Erledigt|  0 |  
-|Mail-Versand simuliert|       15.01.2023|10|  Friese | Erledigt|  0 |  
+|PHP-SQL Useraccount|   5|     04.01.2023| Friese | Erledigt|  0 |  
+|PHP-SQL Useraccount|  2|     15.01.2023|  Gass | Erledigt|  0 |  
+|PY-Umwandlung von Dateien|  20|     15.12.2022|  Gass | Erledigt|  0 |  
+|PY-Umwandlung von Dateien| 20|       15.12.2022| Föll | Erledigt|  0 |  
+|PY-Umwandlung von Dateien|10|       15.12.2022|  Friese | Erledigt|  0 |  
+|Mail-Versand simuliert|  10|     15.01.2023|  Friese | Erledigt|  0 |  
 
 
 ## 5. Testumgebung Webhosting
@@ -72,17 +72,17 @@ ohne Umwandlungsfunktion, weil es sich um Webhosting und um keinen Server handel
 | Datei upload Test PDF-Dateien |10|      18.12.2022|  Gass | Erledigt|  0 |  
 |PHP-Datei upload Test PDF-Dateien 12||       18.12.2022|  Föll | Erledigt|  0 |  
 |PHP-Datei upload Test PDF-Dateien |10|      04.01.2023|  Friese | Erledigt|  0 | 
-|PHP-SQL Useraccount|       04.01.2023|5|  Friese | Erledigt|  0 |  
-|PHP-SQL Useraccount|       15.01.2023|2|  Gass | Erledigt|  0 |  
-|PY-Umwandlung von Dateien|       15.12.2022|20|  Gass | Erledigt|  0 |  
-|Mail-Versand |       15.01.2023|10|  Friese | Erledigt|  0 |  
+|PHP-SQL Useraccount|       5| 04.01.2023| Friese | Erledigt|  0 |  
+|PHP-SQL Useraccount|      2|  15.01.2023| Gass | Erledigt|  0 |  
+|PY-Umwandlung von Dateien|     20|   15.12.2022| Gass | Erledigt|  0 |  
+|Mail-Versand |   10  | 15.01.2023|  Friese | Erledigt|  0 |  
 
 ## 6. Sicherheit
 ### geschützte Useraccounts
 Die Useraccounts sind mit Mail-Passwort Kombination in einer passwortgeschützten SQL-Datenbank in hashform gespeichert.
 
 ### Uploadfiles
-Die Dateien, welche convertiert wurde sind nur im eigenen User-Bereich einsehbar.
+Die Dateien, welche convertiert wurden sind nur im eigenen User-Bereich einsehbar.
 
 ### SSL-Verschlüsselung
 noch nicht ausgeführt
