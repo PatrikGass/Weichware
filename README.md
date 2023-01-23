@@ -83,7 +83,12 @@ ohne Umwandlungsfunktion, weil es sich um Webhosting und um keinen Server handel
 |PY-Umwandlung von Dateien|     20|   15.12.2022| Gass | Erledigt|  0 |  
 |Mail-Versand |   10  | 15.01.2023|  Friese | Erledigt|  0 |  
 
-## 6. Sicherheit
+## 6. Vorgehensweise
+Entwickelt der Programmdatei in PHP oder PY
+Überprüfung durch Teammitglied
+Upload auf Git
+
+## 7. Sicherheit
 ### geschützte Useraccounts
 Die Useraccounts sind mit Mail-Passwort Kombination in einer passwortgeschützten SQL-Datenbank in hashform gespeichert.
 
@@ -95,12 +100,12 @@ noch nicht ausgeführt
 
 ###
 
-## 7.IT-Konzept
+## 8.IT-Konzept
 Diese Datei dient nur der ersten Installation. Die vollständige Dokumentation befindet sich in der IT-Konzept.md
 
 
 
-## 8.Autoren
+## 9.Autoren
 Patrik Gass, 5. Semester Wirtschaftsinformatik Online, Werkstudent im Fachbereich Arbeitsplatz und Kommunikation
 Erik Wilmer, Präsentationen
 Roberto Demny IT-Konzept
